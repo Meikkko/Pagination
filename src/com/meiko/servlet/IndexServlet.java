@@ -41,7 +41,7 @@ public class IndexServlet extends HttpServlet {
             int currentPage = Integer.parseInt(currPage);
 
             //2. 创建PageBean对象，设置当前页参数； 传入service方法参数
-            PageBean<Employee> pageBean = new PageBean<Employee>();
+            PageBean<Employee> pageBean = new PageBean<>();
             pageBean.setCurrentPage(currentPage);
 
             //3. 调用service

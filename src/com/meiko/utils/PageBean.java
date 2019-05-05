@@ -9,33 +9,11 @@ import java.util.List;
  * @date 2019/5/5
  */
 public class PageBean<T> {
-    /**
-     *  当前页, 默认显示第一页
-     */
-    private int currentPage = 1;
-
-    /**
-     *   每页显示的行数(查询返回的行数), 默认每页显示4行
-     */
-    private int pageCount = 4;
-
-    /**
-     *   总记录数
-     */
-    private int totalCount;
-
-    /**
-     *  总页数 = 总记录数 / 每页显示的行数  (+ 1)
-     */
-    private int totalPage;
-
-    /**
-     *  分页查询到的数据
-     */
-    private List<T> pageData;
-
-
-
+    private int currentPage = 1; // 当前页, 默认显示第一页
+    private int pageCount = 4;   // 每页显示的行数(查询返回的行数), 默认每页显示4行
+    private int totalCount;      // 总记录数
+    private int totalPage;       // 总页数 = 总记录数 / 每页显示的行数  (+ 1)
+    private List<T> pageData;       // 分页查询到的数据
 
 
     /**
