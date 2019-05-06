@@ -51,7 +51,7 @@ public class IndexServlet extends HttpServlet {
             request.setAttribute("pageBean", pageBean);
 
             //5. 跳转
-            uri = "/WEB-INF/list.jsp";
+            uri = "/list.jsp";
         } catch (Exception e) {
             e.printStackTrace();  // 测试使用
             // 出现错误，跳转到错误页面；给用户友好提示
