@@ -16,9 +16,9 @@ import java.io.IOException;
  * @date 2019/5/6
  */
 public class LoginServlet extends HttpServlet {
-    // Service实例
+
     private IAdminService adminService = new AdminService();
-    // 跳转资源
+
     private String uri;
 
     @Override
